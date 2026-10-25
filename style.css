@@ -1,0 +1,243 @@
+﻿body {
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
+    background-color: #f7f5f0;
+    margin: 0;
+    padding: 0;
+    color: #555555;
+    font-size: 16px; 
+}
+
+.navbar {
+	background-color: #7d9d9c;
+	color: #ffffff;
+	padding: 20px 40px 20px 40px; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 4px 12px rgba(125, 157, 156, 0.15);
+}
+
+.navbar-brand {
+    font-size: 23px; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-links a {
+    color: #f0f4f4;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 20px;
+    transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.container-left {
+    flex: 1.1;
+    background: #ffffff;
+    padding: 22px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(180, 170, 160, 0.12);
+    border: 1px solid #ebe5dc;
+}
+
+.sidebar-right {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(180, 170, 160, 0.12);
+    border: 1px solid #ebe5dc;
+}
+
+.container {
+    width: 600px;
+    margin: 30px auto; 
+    background: #ffffff;
+    padding: 22px 30px;
+    border-radius: 20px; 
+    box-shadow: 0 8px 24px rgba(180, 170, 160, 0.12);
+    border: 1px solid #ebe5dc;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #687980;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #687980;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+.form-group label {
+    display: inline-block;
+    width: 60px;
+    font-weight: bold;
+    color: #7a7a7a;
+    font-size: 16px;
+}
+
+.form-group input[type=text], .form-group input[type=number], .form-group input[type=file] {
+    padding: 10px 14px;
+    width: calc(100% - 80px);
+    border: 1.5px solid #dfd8d0;
+    border-radius: 12px;
+    background-color: #faf8f5;
+    color: #444;
+    font-size: 16px; 
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.form-group input[type=text]:focus, .form-group input[type=number]:focus {
+    border-color: #a3c1ad;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(163, 193, 173, 0.2);
+}
+
+button, input[type=submit] {
+    background-color: #a3c1ad;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(163, 193, 173, 0.3);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+button:hover, input[type=submit]:hover {
+    background-color: #92b09c;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 14px rgba(163, 193, 173, 0.4);
+}
+
+button:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+.btn-del {
+    background-color: #e77f67;
+    padding: 5px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.btn-del:hover {
+    background-color: #cf6a53;
+    transform: translateY(-1px);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ebe5dc;
+}
+
+table, th, td {
+    border: none;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 16px; 
+}
+
+th {
+    background-color: #f0ebe1;
+    color: #687980;
+    font-weight: 600;
+}
+
+td {
+    background-color: #ffffff;
+    border-top: 1px solid #f4efe6;
+    color: #555555;
+}
+
+.container p a {
+    display: inline-block;
+    color: #8da4b4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+}
+
+.container p a:hover {
+    color: #6f8796;
+    text-decoration: underline;
+}
+
+.chart-box {
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.chart-box canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 12px;
+}
+
+.image-container {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
